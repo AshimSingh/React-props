@@ -5,7 +5,7 @@ function Book(props){
   const myfun =(e)=>{
     console.log(e)
     console.log(e.target)
-    alert("Hello ashim")
+    alert("Hello world")
   }
   const ref=(author)=>{
     
