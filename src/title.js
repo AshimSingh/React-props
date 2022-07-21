@@ -3,7 +3,12 @@ import {useState} from 'react'
 function Title (){
     const [title, funTitle] =useState('New Arrivals')
     const handle = ()=>{
-        funTitle("New Items")
+        if(title=='New Arrivals'){
+            funTitle('New Item')
+        }
+        else{
+            funTitle('New Arrivals')
+        }
     }
     return(
             <div className="title">
