@@ -3,13 +3,20 @@ import ReactDom from 'react-dom'
 import './index.css'
 import  {bookList} from './books'
 import Book from './book'
+import Title from './title'
 function Myapp(){
   return(
     <section className='Libary'>
+      <Title></Title>
       {
         bookList.map((puskat)=>{
           return(
-            <Book key={puskat.id} book={puskat}></Book>
+            
+            <div>
+              
+              <Book key={puskat.id} book={puskat}></Book>
+              
+            </div>
           )
         })
       }
