@@ -4,22 +4,23 @@ import './index.css'
 import  {bookList} from './books'
 import Book from './book'
 import Title from './title'
+import Heading from './tutorials/Heading'
 function Myapp(){
   return(
-    <section className='Libary'>
+    <section>
       <Title></Title>
-      {
+      <div className='Libary'>
+        {
         bookList.map((puskat)=>{
           return(
-            
             <div>
-              
               <Book key={puskat.id} book={puskat}></Book>
-              
             </div>
           )
         })
       }
+      </div>
+      <Heading></Heading>
     </section>
   )
 }
