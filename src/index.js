@@ -5,7 +5,7 @@ import  {bookList} from './books'
 import Book from './book'
 import Title from './title'
 import Heading from './tutorials/Heading'
-import Setup from './tutorials/UseState object'
+import Setup from './tutorials/SimpleCounter'
 function Myapp(){
   return(
     <section>
