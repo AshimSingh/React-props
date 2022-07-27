@@ -5,6 +5,7 @@ import  {bookList} from './books'
 import Book from './book'
 import Title from './title'
 import Heading from './tutorials/Heading'
+import Setup from './tutorials/UseState object'
 function Myapp(){
   return(
     <section>
@@ -20,7 +21,7 @@ function Myapp(){
         })
       }
       </div>
-      <Heading></Heading>
+      <Setup></Setup>
     </section>
   )
 }
