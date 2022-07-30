@@ -6,13 +6,15 @@ const UseEffectBasic=()=>{
     const [value,setvalue]=useState(0)
     useEffect(()=>{
         console.log("use effect")
-        document.title=`${value} New Message`
+        if(value>0){
+            document.title=`(${value}) New Message`
+        }
     })   
     console.log("console")
     return(
         <>
             <h1>
-                Hello World
+                {value}
             </h1>
             <h3>Good Morning Ashim, Greetings!!!</h3>
             {/* <h2>{data}</h2> */}
