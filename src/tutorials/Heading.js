@@ -6,18 +6,23 @@ const UseState=()=>{
     let delt =true
     const [person,setPerson] =useState(data)
     const remove=(id)=>{
-        let removePeople = person.filter((p)=>p.id !== id)
-        setPerson(removePeople)
+        // let removePeople = person.filter((p)=>p.id !== id)
+        // setPerson(removePeople)
+        
+        setPerson((aarkoMunchye)=>{
+            console.log(aarkoMunchye)
+            return aarkoMunchye.filter((p)=>p.id !==id)
+        })
     }
     return(
         <>
             {
                 person.map((people)=>{
-                    const {id,name}=people
+                    // const {id,name}=people
                     return(
-                        <div key={id} className='item'>
-                            <h1>{name}</h1>
-                            <button onClick={()=>remove(id)}>Remove</button>
+                        <div key={people.id} className='item'>
+                            <h1>{people.name}</h1>
+                            <button onClick={()=>remove(people.id)}>Remove</button>
                         </div>
                     )
                 })

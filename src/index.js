@@ -5,7 +5,8 @@ import  {bookList} from './books'
 import Book from './book'
 import Title from './title'
 import Heading from './tutorials/Heading'
-import Setup from './tutorials/SimpleCounter'
+// import Setup from './tutorials/SimpleCounter'
+import Setup from './tutorials/useEffectbasic'
 function Myapp(){
   return(
     <section>
@@ -21,6 +22,7 @@ function Myapp(){
         })
       }
       </div>
+      
       <Setup></Setup>
     </section>
   )
