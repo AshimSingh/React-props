@@ -6,7 +6,8 @@ import Book from './book'
 import Title from './title'
 import Heading from './tutorials/Heading'
 // import Setup from './tutorials/SimpleCounter'
-import Setup from './tutorials/useEffectbasic'
+// import Setup from './tutorials/useEffectbasic'
+import Setup from './tutorials/fetchdata'
 function Myapp(){
   return(
     <section>
