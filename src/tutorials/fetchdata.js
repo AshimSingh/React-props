@@ -3,7 +3,7 @@ import React from "react";
 const url = "https://api.github.com/users"
 
 const Fetchdata= ()=>{
-    const [user,setUser]=useState()
+    const [user,setUser]=useState([])
 
     const getUser = async ()=>{
         const response = await fetch(url)
@@ -14,7 +14,7 @@ const Fetchdata= ()=>{
     useEffect(()=>{
         getUser()
         
-    },[])
+    }, [])
     return(
         <>
             <div className="container"><h1>Fectch Data</h1></div>
@@ -23,7 +23,14 @@ const Fetchdata= ()=>{
                     const {id,login,avatar_url,html_url}=data
                     return(
                         <>
-                            <h4>{login}</h4>
+                            <div className='tiles' key={id}>
+                            <img className='bImg' src={avatar_url}></img>
+                            <div className='title'>
+                                <div className='suffix'>
+                                {login}
+                                </div>
+                            </div>
+                            </div>
                         </>
                     )
                 })
