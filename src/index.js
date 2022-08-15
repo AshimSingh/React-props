@@ -11,7 +11,7 @@ import Setup from './tutorials/fetchdata'
 function Myapp(){
   return(
     <section>
-      <Title></Title>
+      {/* <Title></Title>
       <div className='Libary'>
         {
         bookList.map((puskat)=>{
@@ -22,7 +22,7 @@ function Myapp(){
           )
         })
       }
-      </div>
+      </div> */}
       
       <Setup></Setup>
     </section>
