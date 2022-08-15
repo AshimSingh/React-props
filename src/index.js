@@ -7,7 +7,8 @@ import Title from './title'
 import Heading from './tutorials/Heading'
 // import Setup from './tutorials/SimpleCounter'
 // import Setup from './tutorials/useEffectbasic'
-import Setup from './tutorials/fetchdata'
+// import Setup from './tutorials/fetchdata'
+import Setup from './tutorials/multipleReturn'
 function Myapp(){
   return(
     <section>
